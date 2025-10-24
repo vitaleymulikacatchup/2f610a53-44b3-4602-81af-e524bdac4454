@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -11,9 +11,9 @@ import TestimonialCardThree from '@/components/sections/testimonial/TestimonialC
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { Award, Briefcase, DollarSign, Home, MessageCircle, Phone, Star, TrendingUp } from "lucide-react";
+import { Award, Briefcase, DollarSign, MessageCircle, Phone, Star, TrendingUp } from "lucide-react";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <ThemeProvider
       defaultButtonVariant="shift-hover"
@@ -35,7 +35,6 @@ export default function Home() {
           title="Find Your Dream Property"
           description="Discover exceptional homes and investment opportunities with our expert real estate services"
           tag="Premium Properties"
-          tagIcon={Home}
           buttons={[
             {
               text: "Browse Properties",
@@ -112,7 +111,7 @@ export default function Home() {
             {
               id: "buyer",
               badge: "For Buyers",
-              badgeIcon: Home,
+              badgeIcon: DollarSign,
               price: "Free Consultation",
               subtitle: "Complete buyer representation services",
               buttons: [
